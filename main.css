@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height:100%;
+}
+body{
+    min-height: 100%;
+    overflow-x: hidden;
+}
+/* header */
+header{
+    /* background-color: grey; */
+    height: 56px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 1px 7px;
+}
+/*  ////////////////////////////////////////CONTAINER*/
+/* right */
+header #right{
+    margin: auto 0;
+}
+#hamburgar-menu{
+    width: 44px;
+    display: inline-block;
+}
+#youtube-logo{
+    height: 44px;
+    display: inline-block;
+}
+
+/* Center  */
+header #center{
+    text-align: center;
+    margin: auto 0;
+}
+#search-bar{
+    width: 65%;
+    max-width: 562px;
+    height: 30px;
+    padding: 3px 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto','Noto',sans-serif;
+    margin: auto;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 2px 0 0 2px;
+    border-style: none;
+    border: 1px solid rgba(0,0,0,0.1);
+
+}
+#search-button{
+    height: 30px;
+    line-height: 24px;
+    margin: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 22px;
+    border-radius: 2px 0 0 2px;
+    border-style: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #F0F0F0;
+}
+/* left */
+header #left{
+    margin: auto 0;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin: 0 10px;
+}
+.profile{
+    background-color: blue;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+}
+/* left */
+#main-video{
+      position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video{ /* the iframe */
+       position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#details{
+    margin-top: 15px;
+}
+#details h1{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+#statistics{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#statistics .views-date{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #606060;
+}
+.like{
+    opacity: 0.5;
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.like-share{
+    float: right;
+}
+/* channel info*/
+#channel-info{
+    margin: 15px 0;
+}
+.channel-image{
+    border-radius: 100%;
+    float: left;
+    margin-right: 15px;
+}
+#channel-name{
+    padding-top: 10px;
+}
+button#subscribe{
+    float: right;
+    background-color: #CC0000;
+    color: white;
+    border: none;
+    padding:10px 15px;
+    font-weight:600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+#description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    max-width: 620px;
+    line-height: 21px;
+    margin-left: 60px;
+}
+.show-more{
+    margin-left: 60px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #606060;
+}
+/* comments */
+#comments{
+    margin: 20px 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+#comments #num{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+}
+#comments #sort{
+    opacity: 0.5;
+}
+#add-comment{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+#add-comment  > input{
+    float: left;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin-left: 60px;
+    padding-bottom: 10px ;
+}
+/* a comment////////////////////////////// */
+.comment{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    position: relative;
+}
+.comment-image{
+    border-radius: 100%;
+    position: absolute;
+    left: -60px;
+}
+.commentor{
+    font-size: 13px;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    margin-right: 6px;
+}
+.time{
+    font-size: 13px;
+    font-family: 'roboto', sans-serif;
+    color: #606060;
+}
+.comment .content{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    padding: 10px 0 ;
+}
+.reply{
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'roboto', sans-serif;
+    color: #606060;
+}
+.more-replies{
+    margin-top: 10px;
+    color: #065FD4;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+
+}
+
+/* right //////////////////*/
+.suggestion{
+    /* width: 400px; */
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+#upnext{
+    overflow: auto;
+    line-height: 50px;
+}
+#upnext-text{
+    margin: auto 0;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+#upnext img{
+    float: right;
+}
+#auto-play{
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #606060;
+    margin: auto 0;
+    display: inline-block;
+}
+.thumbnail{
+    float:left;
+    margin-right: 5px;
+    position: relative;
+}
+img.watch-later{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    display: none;
+}
+img.add-to-watch{
+    position: absolute;
+    top: 35px;
+    right: 3px;
+    display: none;
+}
+.thumbnail:hover img.hover{
+    display: block;
+}
+
+.suggestion-title{
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.suggestion-info{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #606060;
+}
+
+/* GEneral parts  */
+.bold-text{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.light-text{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #606060;
+}
+
+/* media querys */
+@media (max-width: 660px){
+    header #center{
+        text-align: right;
+    }
+
+    #search-bar{
+        display:none;
+    }
+    #search-button{
+        padding: 5px;
+        border-radius: 2px 0 0 2px;
+        border-style: none;
+        border: 1px solid white;
+        background-color: white;
+    }
+    .views-date{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+
+    #container{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-gap:20px;
+        margin: 25px 25px;
+
+    }
+
+}
+@media (min-width: 1001px){
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-gap:20px;
+        margin: 25px 3.5%;
+
+    }
+    .views-date{
+        display: none;
+    }
+}
